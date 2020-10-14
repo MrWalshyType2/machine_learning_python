@@ -1,0 +1,19 @@
+import numpy
+from scipy import stats
+
+# Mean      - Average value
+# Median    - Mid-point value
+# Mode      - Most common value
+
+# Machine learning is often interested in the mean, median and mode of a dataset.
+speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
+
+meanSpeed = numpy.mean(speed)
+medianSpeed = numpy.median(speed)
+modeOfSpeed = stats.mode(speed)
+
+print(speed)
+
+print("Mean of speeds: ", meanSpeed)
+print("Median speed: ", medianSpeed)
+print("Mode of speed: ", modeOfSpeed)
