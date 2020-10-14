@@ -54,3 +54,10 @@ graph.write_png("mydecisiontree.png")
 img = pltimg.imread("mydecisiontree.png")
 imgplot = plot.imshow(img)
 plot.show()
+
+
+###########################################################
+# Predicting values with the Decision Tree
+#   - Should I go to see a show starring a 25 years old British comedian, with 13 years of experience and
+#     a comedy ranking of 8
+print(decisionTree.predict([[25, 13, 8, 0]])) # [1] = YES most times, but the answer may vary
